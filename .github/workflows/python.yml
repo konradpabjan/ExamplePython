@@ -11,13 +11,13 @@ jobs:
         os: [windows-latest]
     steps:
     - uses: actions/checkout@v1
-    - name: 'Print version. Default Python
+    - name: 'Print version. Default Python'
       run: |
         python -c "import sys; print(sys.version)"
     - uses: actions/setup-python@v1
       with:
         python-version: '2.7'
-    - name: 'Print version. Should be 2.7
+    - name: 'Print version. Should be 2.7'
       run: |
         python -c "import sys; print(sys.version)"
     - uses: actions/setup-python@v1
